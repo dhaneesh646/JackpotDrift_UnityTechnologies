@@ -3089,6 +3089,7 @@ MonoBehaviour:
   winLoseText: {fileID: 391801209}
   coinText: {fileID: 1696645348}
   closeresultPanelButton: {fileID: 793615656}
+  exitButton: {fileID: 1581993986}
   menuButton: {fileID: 318615443}
   gameScorePanelContnueButton: {fileID: 793615656}
   rollCountText: {fileID: 1888078676}
