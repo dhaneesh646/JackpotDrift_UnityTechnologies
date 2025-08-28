@@ -24,7 +24,6 @@ public class GameController : MonoBehaviour
     void Start()
     {
         spinButton.onClick.AddListener(Spin);
-        scoreTetx.text = AppManager.Instance.userDatas.TotalScore;
         menuButton.onClick.AddListener(LoadHomeScene);
     }
 
@@ -82,7 +81,7 @@ public class GameController : MonoBehaviour
         score += scoreToAdd;
 
         scoreTetx.text = score.ToString();
-        AppManager.Instance.userDatas.TotalScore = score.ToString();
+        
 
         if (scoreToAdd > 0)
         {
