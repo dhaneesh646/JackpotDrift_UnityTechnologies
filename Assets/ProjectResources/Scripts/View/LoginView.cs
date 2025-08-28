@@ -5,12 +5,13 @@ using UnityEngine.UI;
 public class LoginView : MonoBehaviour
 {
     [Header("UI References")]
-    public TMP_InputField emailInput;
-    public TMP_InputField passwordInput;
-    public Button loginButton;
-    public Toggle rememberMeToggle;
-    public GameObject loginPanel;
-    public GameObject autoLoginPanel;
+    [SerializeField] TMP_InputField emailInput;
+    [SerializeField] TMP_InputField passwordInput;
+    [SerializeField] Toggle showPasswordToggle;
+    [SerializeField] Button loginButton;
+    [SerializeField] Toggle rememberMeToggle;
+    [SerializeField] public GameObject loginPanel;
+    [SerializeField] public GameObject autoLoginPanel;
 
 
     public string GetEmail() => emailInput.text;
@@ -26,6 +27,11 @@ public class LoginView : MonoBehaviour
     public void BindLogin(System.Action onLoginClicked)
     {
         loginButton.onClick.AddListener(() => onLoginClicked.Invoke());
+        showPasswordToggle.onValueChanged.AddListener((isOn) =>
+        {
+            passwordInput.contentType = isOn ? TMP_InputField.ContentType.Password : TMP_InputField.ContentType.Standard;
+            passwordInput.ForceLabelUpdate();
+        });
     }
 
     public void ClearFields()
