@@ -60,9 +60,4 @@ CREDENTIALS
 - Email : dhaneesh646@gmail.com
 - Password : Dhaneesh123
 
-## 🚀 Getting Started
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/dhaneesh646/JackpotDrift_UnityTechnologies.git
 
