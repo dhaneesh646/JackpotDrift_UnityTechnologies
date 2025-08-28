@@ -197,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: symbolSprites.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[0]'
@@ -210,11 +210,11 @@ PrefabInstance:
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 7b9807e656ad88d42b8435351942ef7b, type: 3}
+      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
+      objectReference: {fileID: 21300000, guid: 6271f9c4ba8a57a41aa23ba43e37f4c4, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[4]'
       value: 
@@ -673,7 +673,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 440df8356e93d434ea9f87a3cded7722, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 578731a237f8f7942afb8777088bbe7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -681,7 +681,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &284148315
@@ -1089,7 +1089,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 652696776d39801459c807b1877d265a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06ef660a43f1f0d4b94573a19e9450f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1097,7 +1097,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &330585543
@@ -2389,7 +2389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: symbolSprites.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[0]'
@@ -2402,11 +2402,11 @@ PrefabInstance:
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 7b9807e656ad88d42b8435351942ef7b, type: 3}
+      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
+      objectReference: {fileID: 21300000, guid: 6271f9c4ba8a57a41aa23ba43e37f4c4, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[4]'
       value: 
@@ -3794,7 +3794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1762971435
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4577,7 +4577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: symbolSprites.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[0]'
@@ -4590,11 +4590,11 @@ PrefabInstance:
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: 7b9807e656ad88d42b8435351942ef7b, type: 3}
+      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[3]'
       value: 
-      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
+      objectReference: {fileID: 21300000, guid: 6271f9c4ba8a57a41aa23ba43e37f4c4, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[4]'
       value: 

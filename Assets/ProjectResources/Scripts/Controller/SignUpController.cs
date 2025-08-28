@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
@@ -69,18 +70,46 @@ public class SignUpController : MonoBehaviour
         });
     }
 
+    // void SaveUsernameToDatabase(string userId, string username)
+    // {
+    //     DatabaseReference dbRef = FirebaseDatabase.DefaultInstance.RootReference;
+    //     dbRef.Child("users").Child(userId).Child("username").SetValueAsync(username).ContinueWithOnMainThread(task =>
+    //     {
+    //         if (task.IsCompleted)
+    //         {
+    //             Debug.Log("Username saved successfully!");
+    //         }
+    //         else
+    //         {
+    //             Debug.LogWarning("Failed to save username: " + task.Exception);
+    //         }
+    //     });
+
+
+    // }
+
     void SaveUsernameToDatabase(string userId, string username)
     {
         DatabaseReference dbRef = FirebaseDatabase.DefaultInstance.RootReference;
-        dbRef.Child("users").Child(userId).Child("username").SetValueAsync(username).ContinueWithOnMainThread(task =>
+
+        // Create a dictionary to hold all initial user data
+        Dictionary<string, object> userData = new Dictionary<string, object>
+        {
+            { "username", username },
+            { "dice_score", 0 },
+            { "slot_score", 0 }
+        };
+
+        // Set all values at once under the userId node
+        dbRef.Child("users").Child(userId).SetValueAsync(userData).ContinueWithOnMainThread(task =>
         {
             if (task.IsCompleted)
             {
-                Debug.Log("Username saved successfully!");
+                Debug.Log("User data saved successfully!");
             }
             else
             {
-                Debug.LogWarning("Failed to save username: " + task.Exception);
+                Debug.LogWarning("Failed to save user data: " + task.Exception);
             }
         });
     }

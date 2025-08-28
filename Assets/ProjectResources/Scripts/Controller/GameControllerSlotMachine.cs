@@ -126,14 +126,14 @@ public class GameControllerSlotMachine : BaseGameController
             lines.Add(line);
         }
 
-        // Verticals
-        for (int c = 0; c < reelCount; c++)
-        {
-            var line = new (int, int)[rowCount];
-            for (int r = 0; r < rowCount; r++)
-                line[r] = (c, r);
-            lines.Add(line);
-        }
+        // // Verticals
+        // for (int c = 0; c < reelCount; c++)
+        // {
+        //     var line = new (int, int)[rowCount];
+        //     for (int r = 0; r < rowCount; r++)
+        //         line[r] = (c, r);
+        //     lines.Add(line);
+        // }
 
         // Main Diagonal
         if (reelCount == rowCount)
