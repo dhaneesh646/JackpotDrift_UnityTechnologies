@@ -9,27 +9,39 @@ public class HomeController : MonoBehaviour
 {
     public HomeView homeView;
     [SerializeField] Button playButton;
+    [SerializeField] GameObject gamePanel;
+    [SerializeField] Button machineGame;
+    [SerializeField] Button diceGame;
+    private string sceneToLoad;
     void Start()
     {
         homeView.SetUserDetails(AppManager.Instance.userDatas.UserName);
-        playButton.onClick.AddListener(LoadGameScene);
+        playButton.onClick.AddListener(DesplaHomePanel);
+        machineGame.onClick.AddListener(() =>
+        {
+            LoadGameScene("SlotMachine_Game");
+        });
+        diceGame.onClick.AddListener(() =>
+        {
+            LoadGameScene("Dice_Game");
+        });
     }
 
-    private void LoadGameScene()
+    void DesplaHomePanel()
+    {
+        gamePanel.SetActive(true);
+    }
+
+    private void LoadGameScene(string sceneName)
     {
         SceneManager.sceneUnloaded += HomeSceneUnloaded;
+        sceneToLoad = sceneName;
         SceneLoader.UnloadSceneAsync("Home");
     }
 
     private void HomeSceneUnloaded(Scene scene)
     {
         SceneManager.sceneUnloaded -= HomeSceneUnloaded;
-        SceneLoader.LoadAdditiveSceneAsync("Game");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SceneLoader.LoadAdditiveSceneAsync(sceneToLoad);
     }
 }

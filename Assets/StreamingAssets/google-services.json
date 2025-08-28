@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "867710591468",
-    "firebase_url": "https://slotgame-aabab-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "slotgame-aabab",
-    "storage_bucket": "slotgame-aabab.firebasestorage.app"
+    "project_number": "309717876807",
+    "firebase_url": "https://jackpotdrift-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "jackpotdrift",
+    "storage_bucket": "jackpotdrift.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:867710591468:android:65dba1bf40809e320820c9",
+        "mobilesdk_app_id": "1:309717876807:android:5a6842195563e60eeef162",
         "android_client_info": {
           "package_name": "com.gamehatch.jackpotdrift"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAj4I3Zq3H1yxHQcikjneGXSbgl4N8i-ps"
+          "current_key": "AIzaSyD1MZnQzNVWZuOnIK1-VxZU80GvyCQr4vk"
         }
       ],
       "services": {

@@ -117,7 +117,8 @@ public class LoginController : MonoBehaviour
             print("server data found" + jsonData);
             dts = JsonUtility.FromJson<userDetails>(jsonData);
             AppManager.Instance.UserDatas.UserName = dts.username;
-            AppManager.Instance.UserDatas.TotalScore = dts.score;
+            AppManager.Instance.UserDatas.TotalScoreInSlotGame = dts.slot_score;
+            AppManager.Instance.userDatas.TotalScorenIDiceGame = dts.dice_score;
         }
         else
         {
@@ -147,6 +148,7 @@ public class LoginController : MonoBehaviour
     public class userDetails
     {
         public string username;
-        public string score;
+        public string slot_score;
+        public string dice_score;
     }
 }

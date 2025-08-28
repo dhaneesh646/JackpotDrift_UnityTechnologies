@@ -124,57 +124,9 @@ public class Row : MonoBehaviour
             }
         }
     }
-    // void SnapToStopPosition()
-    // {
-    //     float firstSymbolY = symbolObjects[0].localPosition.y;
-
-    //     float offset = firstSymbolY % symbolSpacing;
-
-
-    //     for (int i = 0; i < totalSymbols; i++)
-    //     {
-    //         Transform symbolTransform = symbolObjects[i];
-    //         symbolTransform.localPosition = new Vector2(symbolTransform.localPosition.x, symbolTransform.localPosition.y - offset);
-    //     }
-
-    //     for (int i = 0; i < visibleSymbolsNames.Length; i++)
-    //     {
-    //         visibleSymbolsNames[i] = "";
-    //     }
-
-    //     // Get the vertical positions for the top, middle, and bottom symbols
-    //     Vector3[] corners = new Vector3[4];
-    //     slotMaskArea.GetWorldCorners(corners);
-    //     float topY = corners[1].y - (symbolSpacing / 2);
-    //     float middleY = (corners[0].y + corners[1].y) / 2;
-    //     float bottomY = corners[0].y + (symbolSpacing / 2);
-
-    //     // Iterate through all symbols to find the ones at the target positions
-    //     for (int i = 0; i < totalSymbols; i++)
-    //     {
-    //         Transform symbolTransform = symbolObjects[i];
-
-    //         // Use a small tolerance for floating point comparisons
-    //         float tolerance = 0.1f;
-
-    //         if (Mathf.Abs(symbolTransform.position.y - topY) < tolerance)
-    //         {
-    //             visibleSymbolsNames[0] = symbolTransform.GetComponent<SpriteRenderer>().sprite.name;
-    //         }
-    //         else if (Mathf.Abs(symbolTransform.position.y - middleY) < tolerance)
-    //         {
-    //             visibleSymbolsNames[1] = symbolTransform.GetComponent<SpriteRenderer>().sprite.name;
-    //         }
-    //         else if (Mathf.Abs(symbolTransform.position.y - bottomY) < tolerance)
-    //         {
-    //             visibleSymbolsNames[2] = symbolTransform.GetComponent<SpriteRenderer>().sprite.name;
-    //         }
-    //     }
-    // }
 
     void SnapToStopPosition()
     {
-        // First, find the symbol that's closest to the center position
         float centerY = 0f; // Center of the mask in local space
         int centerIndex = 0;
         float minDistance = Mathf.Infinity;
