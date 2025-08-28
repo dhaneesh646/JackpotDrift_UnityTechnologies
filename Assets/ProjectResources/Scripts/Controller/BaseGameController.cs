@@ -16,8 +16,10 @@ public abstract class BaseGameController : MonoBehaviour
     [SerializeField] protected TMP_Text resultText;
     [SerializeField] protected TMP_Text winLoseText;
     [SerializeField] protected TMP_Text coinText;
-
+    [SerializeField] protected Button closeresultPanelButton;
     
+
+
     [Header("Menu and Game score panel Buttons")]
     [SerializeField] protected Button menuButton;
     [SerializeField] protected Button gameScorePanelContnueButton;
@@ -36,9 +38,15 @@ public abstract class BaseGameController : MonoBehaviour
             menuButton.onClick.AddListener(LoadHomeScene);
         if (gameScorePanelContnueButton != null)
             gameScorePanelContnueButton.onClick.AddListener(ResetGame);
+        if (closeresultPanelButton != null)
+            closeresultPanelButton.onClick.AddListener(() =>
+            {
+                if (resultPanel != null) resultPanel.SetActive(false);
+                AudioManager.Instance.StopEffectsAudios();
+            });
     }
 
-    protected virtual void ResetGame(){}
+    protected virtual void ResetGame() { }
     protected abstract void OnActionButtonPressed();
     protected abstract void EvaluateResult();
 
@@ -79,6 +87,14 @@ public abstract class BaseGameController : MonoBehaviour
         if (resultPanel != null) resultPanel.SetActive(true);
         if (resultText != null) resultText.text = scoreInfo;
         if (winLoseText != null) winLoseText.text = isWin ? "You Win!" : "You Lose!";
+        if (isWin)
+        {
+            AudioManager.Instance.PlayEffect(SoundEffect.Victory);
+        }
+        else
+        {
+            AudioManager.Instance.PlayEffect(SoundEffect.Lose);
+        }
     }
 
     protected abstract void LoadHomeScene();

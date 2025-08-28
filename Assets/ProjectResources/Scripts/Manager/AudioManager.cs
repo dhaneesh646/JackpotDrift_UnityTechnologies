@@ -7,7 +7,7 @@ public enum SoundEffect
     DiceRoll,
     SlotMachine,
     Victory,
-    Loss
+    Lose
 
 }
 
@@ -124,6 +124,11 @@ public class AudioManager : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void StopEffectsAudios()
+    {
+        sfxSource.Stop();
     }
 
     public void PauseAll()

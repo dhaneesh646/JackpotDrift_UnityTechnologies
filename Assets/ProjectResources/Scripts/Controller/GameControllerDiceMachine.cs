@@ -4,8 +4,6 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using OneXR.WorkFlow.Common;
-using UnityEditor.Experimental.GraphView;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class GameControllerDiceMachine : BaseGameController
 {
