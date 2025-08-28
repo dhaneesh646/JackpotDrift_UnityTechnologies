@@ -206,11 +206,11 @@ PrefabInstance:
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[1]'
       value: 
-      objectReference: {fileID: 21300000, guid: 9086d3feeed897c48a0d053416afe04d, type: 3}
+      objectReference: {fileID: 21300000, guid: 8dc04c629568db44fb3a925e55a1ca3e, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
+      objectReference: {fileID: 21300000, guid: 38790a5ed4709f641a3c1f76092b8f8c, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[3]'
       value: 
@@ -673,7 +673,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 578731a237f8f7942afb8777088bbe7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6ada3a5683911646a9258773edaf90f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1089,7 +1089,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 06ef660a43f1f0d4b94573a19e9450f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c46d54ee10919164aadf0cd1cdb37f1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2398,11 +2398,11 @@ PrefabInstance:
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[1]'
       value: 
-      objectReference: {fileID: 21300000, guid: 9086d3feeed897c48a0d053416afe04d, type: 3}
+      objectReference: {fileID: 21300000, guid: 8dc04c629568db44fb3a925e55a1ca3e, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
+      objectReference: {fileID: 21300000, guid: 38790a5ed4709f641a3c1f76092b8f8c, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[3]'
       value: 
@@ -2521,7 +2521,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5fa230fc6800bc3449faf12e2fd8136f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bfe0c11cd7a281c4597ea1e1a0b13343, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2743,7 +2743,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 4dae14b4c21be1f4fb4fd3955cfd5cb7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b0a102c16626fc459f831c05f24486f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4186,7 +4186,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7ec5cc44122f44248a179c4f4f14bdec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 193910f922b09ce4393ad01acd9798df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4586,11 +4586,11 @@ PrefabInstance:
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[1]'
       value: 
-      objectReference: {fileID: 21300000, guid: 9086d3feeed897c48a0d053416afe04d, type: 3}
+      objectReference: {fileID: 21300000, guid: 8dc04c629568db44fb3a925e55a1ca3e, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: c61fa40b9f9c89d4ca704cec509a7559, type: 3}
+      objectReference: {fileID: 21300000, guid: 38790a5ed4709f641a3c1f76092b8f8c, type: 3}
     - target: {fileID: 3658965270808048394, guid: 7be1e3827d3a87e4b84e035874333dea, type: 3}
       propertyPath: 'symbolSprites.Array.data[3]'
       value: 
