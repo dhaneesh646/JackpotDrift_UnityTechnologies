@@ -58,7 +58,7 @@
 CREDENTIALS
 - Login Details
 - Email : dhaneesh646@gmail.com
-- Password : Dhaneesh@123
+- Password : Dhaneesh123
 
 ## 🚀 Getting Started
 
