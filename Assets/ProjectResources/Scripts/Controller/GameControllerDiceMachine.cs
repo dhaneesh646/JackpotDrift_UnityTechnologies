@@ -4,6 +4,8 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using OneXR.WorkFlow.Common;
+using UnityEditor.Experimental.GraphView;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameControllerDiceMachine : BaseGameController
 {
@@ -47,6 +49,9 @@ public class GameControllerDiceMachine : BaseGameController
     protected override void Start()
     {
         base.Start();
+        score = int.Parse(AppManager.Instance.userDatas.TotalScorenIDiceGame);
+        coinText.text = score.ToString();
+
         playerRollResetButton.onClick.AddListener(() =>
         {
             playerRolls = 1;
@@ -67,7 +72,7 @@ public class GameControllerDiceMachine : BaseGameController
         isGameWin = false;
         isReroll = false;
         float elapsedTime = 0f;
-
+        AudioManager.Instance.PlayEffect(SoundEffect.DiceRoll);
         while (elapsedTime < rollDuration)
         {
             int random1 = Random.Range(0, 6);
@@ -95,6 +100,8 @@ public class GameControllerDiceMachine : BaseGameController
 
     protected override void EvaluateResult()
     {
+        scoreToAdd = 0;
+
         if (System.Array.Exists(gameRules.winNumbers, element => element == currentSum))
         {
             isGameWin = true;
@@ -102,7 +109,7 @@ public class GameControllerDiceMachine : BaseGameController
 
             scoreToAdd = 50;
             gameActive = false;
-            playerRolls += 1; 
+            playerRolls += 1;
             rollCountText.text = $"Rolls Left: {playerRolls}";
             UpdateLatestScoreToServer("dice_score");
         }
@@ -111,7 +118,6 @@ public class GameControllerDiceMachine : BaseGameController
             isGameWin = false;
             isReroll = false;
 
-            scoreToAdd = 0;
             gameActive = false;
             playerRolls = Mathf.Max(0, playerRolls - 1);
             rollCountText.text = $"Rolls Left: {playerRolls}";
@@ -165,7 +171,7 @@ public class GameControllerDiceMachine : BaseGameController
         rollCountText.text = $"Rolls Left: {playerRolls}";
     }
 
-    
+
 
     protected override void LoadHomeScene()
     {

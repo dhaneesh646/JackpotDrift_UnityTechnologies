@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Application.unity
     guid: 7c677d56cbf2266459839a3ecb369a5d
   - enabled: 1
+    path: Assets/Scenes/Dice_Game.unity
+    guid: 483483ab5f6b6b14d92a28dc08f101d0
+  - enabled: 1
+    path: Assets/Scenes/SlotMachine_Game.unity
+    guid: a20a63afd6c299d479ed937dcc21e441
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1

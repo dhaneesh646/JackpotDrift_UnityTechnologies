@@ -15,6 +15,7 @@ public abstract class BaseGameController : MonoBehaviour
     [SerializeField] protected GameObject resultPanel;
     [SerializeField] protected TMP_Text resultText;
     [SerializeField] protected TMP_Text winLoseText;
+    [SerializeField] protected TMP_Text coinText;
 
     
     [Header("Menu and Game score panel Buttons")]
@@ -57,6 +58,7 @@ public abstract class BaseGameController : MonoBehaviour
                 Debug.LogWarning("Failed to save score: " + task.Exception);
             }
         });
+        coinText.text = score.ToString();
     }
 
     protected void UpdateWinStatus(string scoreInfo, bool isWin)

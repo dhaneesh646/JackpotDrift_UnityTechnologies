@@ -9,5 +9,6 @@ public class HomeView : MonoBehaviour
     public void SetUserDetails(string username)
     {
         username_tmp.text = "Hi," + " " + username;
+        totalCoins_tmp.text = (int.Parse(AppManager.Instance.userDatas.TotalScoreInSlotGame) + int.Parse(AppManager.Instance.userDatas.TotalScorenIDiceGame)).ToString();
     }
 }

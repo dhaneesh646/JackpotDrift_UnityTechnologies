@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1130dec51624e9843b3afc6f774acd8d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe8eb81d8e901874fb6068384d8038cc, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1754,7 +1754,7 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 30
   m_fontSizeMax: 50
   m_fontStyle: 1
@@ -1965,7 +1965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1130dec51624e9843b3afc6f774acd8d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe8eb81d8e901874fb6068384d8038cc, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2365,7 +2365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bfe0c11cd7a281c4597ea1e1a0b13343, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c56f834f88b94140a37ec5ec77c924c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2447,12 +2447,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 2b0a102c16626fc459f831c05f24486f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 981bb909f77ddb640ab7690145601a49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 31.340002, y: 20.903536}
+  m_Size: {x: 15.36, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3117,6 +3117,7 @@ MonoBehaviour:
   resultPanel: {fileID: 1762971434}
   resultText: {fileID: 623183020}
   winLoseText: {fileID: 391801209}
+  coinText: {fileID: 1696645348}
   menuButton: {fileID: 318615443}
   gameScorePanelContnueButton: {fileID: 793615656}
   rollCountText: {fileID: 1888078676}
@@ -3364,7 +3365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1762971435
 RectTransform:
   m_ObjectHideFlags: 0
