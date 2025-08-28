@@ -17,6 +17,7 @@ public abstract class BaseGameController : MonoBehaviour
     [SerializeField] protected TMP_Text winLoseText;
     [SerializeField] protected TMP_Text coinText;
     [SerializeField] protected Button closeresultPanelButton;
+    [SerializeField] protected Button exitButton;
     
 
 
@@ -43,6 +44,11 @@ public abstract class BaseGameController : MonoBehaviour
             {
                 if (resultPanel != null) resultPanel.SetActive(false);
                 AudioManager.Instance.StopEffectsAudios();
+            });
+        if (exitButton != null)
+            exitButton.onClick.AddListener(() =>
+            {
+                Application.Quit();
             });
     }
 
